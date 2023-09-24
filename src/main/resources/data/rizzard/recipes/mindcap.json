@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "rizzard:rizzick"
+    }
+  },
+  "result": {
+    "item": "rizzard:mindcap"
+  }
+}
