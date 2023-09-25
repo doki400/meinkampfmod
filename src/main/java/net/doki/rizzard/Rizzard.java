@@ -1,8 +1,9 @@
 package net.doki.rizzard;
 
 import com.mojang.logging.LogUtils;
-import net.doki.rizzard.item.init.ModBlocks;
-import net.doki.rizzard.item.ModItems;
+import net.doki.rizzard.init.EntityInit;
+import net.doki.rizzard.init.ModBlocks;
+import net.doki.rizzard.init.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,6 +30,7 @@ public class Rizzard
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        EntityInit.ENTITIES.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 

@@ -1,7 +1,5 @@
-package net.doki.rizzard.item.init;
+package net.doki.rizzard.init;
 
-import net.doki.rizzard.item.ModItems;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.crafting.Ingredient;
 

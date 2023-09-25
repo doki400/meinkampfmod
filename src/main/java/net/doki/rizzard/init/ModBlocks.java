@@ -1,12 +1,10 @@
-package net.doki.rizzard.item.init;
+package net.doki.rizzard.init;
 
 import net.doki.rizzard.Rizzard;
-import net.doki.rizzard.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,7 +16,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Rizzard.MOD_ID);
     public static final RegistryObject<Block> BLOW = registerBlock("blow",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).strength(3)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).strength(1)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

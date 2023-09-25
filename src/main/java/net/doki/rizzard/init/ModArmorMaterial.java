@@ -1,4 +1,4 @@
-package net.doki.rizzard.item.init;
+package net.doki.rizzard.init;
 
 import net.doki.rizzard.Rizzard;
 import net.minecraft.sounds.SoundEvent;

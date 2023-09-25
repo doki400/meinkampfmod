@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "features": "rizzard:blow",
+  "features": "rizzard:overworld_blow_ore",
   "biomes": "#minecraft:is_overworld",
   "step": "underground_ores"
 }
